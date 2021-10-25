@@ -19,12 +19,12 @@ body {
 
 .btn-light{
     background:var(--accent-color);
-    color: var(--header-color);
+    color:var(--primary-title-color);
 }
 
 .btn-dark{
     background:#F5F4FA;
-    color: var(--primery-text-color);
+    color: var(--primary-text-color);
 }
 
 
@@ -144,6 +144,6 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--header-color);
+    color: var(--primary-title-color);
     font-synthesis:none;
 }
