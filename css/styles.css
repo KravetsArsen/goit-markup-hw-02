@@ -3,6 +3,7 @@
     --second-text-color: #757575;
     --primary-title-color: #ffffff; 
     --accent-color: #2196F3;
+    --button-color-dark: #f5faf4;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 .btn-dark{
-    background:#F5F4FA;
+    background: var(--button-color-dark);
     color: var(--primary-text-color);
 }
 
@@ -34,19 +35,31 @@ body {
 /* ------------logo------------ */
 
 .logo{
-    font-weight: 700;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
-.menu-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+.logo span{
     color: var(--primery-text-color);
+}
+
+.logo-black{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+.logo-black span{
+    color: var(--primary-title-color);
 }
 
 .header-mail{
@@ -55,6 +68,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color)
+}
+
+.header-mail{
+    font-synthesis: none;
 }
 
 .header-mail:hover, .header-mail:focus{
@@ -69,10 +86,9 @@ body {
     color:var(--second-text-color);
 }
 
-.menu-link:hover, .menu-link:focus{
-    color: var(--accent-color);
+.header-tel{
+    font-synthesis: none;
 }
-
 
 /* -------main-------- */
 
@@ -91,12 +107,37 @@ body {
 
 /* -------button------- */
 
+.menu-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color);
+}
+
+.menu-link:hover, .menu-link:focus{
+    color: var(--accent-color);
+}
+
+.link:active{
+    background-color: var(--accent-color);
+}
+
 .btn{
     cursor: pointer;
 }
 
+.btn{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    letter-spacing: 0.06em;
+}
 
-
+.btn:focus, .btn:hover{
+   background-color: var(--accent-color);
+}
 
 .chapter-features{
     font-weight: 700;
@@ -135,8 +176,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
-
-
 
 /* -------address-------- */
 
