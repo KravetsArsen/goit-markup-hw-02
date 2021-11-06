@@ -2,6 +2,7 @@
     --primery-text-color: #212121;
     --second-text-color: #757575;
     --primary-title-color: #ffffff; 
+    --header-logo: #000000;
     --accent-color: #2196F3;
     --button-color-dark: #f5faf4;
     --background-color:#2F303A;
@@ -10,6 +11,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background:var(--primary-title-color);
+    --primary-title-color: #ffffff; 
 }
 
 .list {
@@ -20,11 +22,17 @@ body {
 }
 
 .btn-light{
+    font-weight: 700;
+    line-height: 1.8;
     background:var(--accent-color);
     color:var(--primary-title-color);
 }
 
-.btn-dark{
+.portfolio-btn{
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
     background: var(--button-color-dark);
     color: var(--primary-text-color);
 }
@@ -32,13 +40,20 @@ body {
 
 /* ------------header------------ */
 
+.current, 
+.footer-contacts:hover, 
+.footer-contacts:focus,
+.footer-contacts:hover, 
+.footer-contacts:focus,
+.menu-link:hover, 
+.menu-link:focus{
+color: var(--accent-color);
+}
 
 /* ------------logo------------ */
 
 .logo{
     font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -49,9 +64,8 @@ body {
     color: var(--primery-text-color);
 }
 
-.logo-black{
+.logo-white{
     font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
@@ -59,37 +73,33 @@ body {
     color: var(--accent-color);
 }
 
-.logo-black span{
+.logo-white span{
     color: var(--primary-title-color);
 }
 
-.header-mail{
+.header-contacts{
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.1;
     letter-spacing: 0.02em;
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
-.header-mail{
-    font-synthesis: none;
+.footer-contacts{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.header-mail:hover, .header-mail:focus{
+.footer-contacts:hover, .footer-contacts:focus,
+.header-contacts:hover, .header-contacts:focus{
     color: var(--accent-color);
 }
 
-.header-tel{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color:var(--second-text-color);
-}
-
-.header-tel{
-    font-synthesis: none;
-}
 
 /* -------main-------- */
 
@@ -116,27 +126,18 @@ body {
     color: var(--primery-text-color);
 }
 
-.menu-link:hover, .menu-link:focus{
-    color: var(--accent-color);
-}
-
-.link:active{
-    background-color: var(--accent-color);
-}
-
 .btn{
     cursor: pointer;
 }
 
 .btn{
-    font-family: Roboto;
     font-size: 16px;
-    line-height: 1.9;
     display: flex;
     letter-spacing: 0.06em;
+
 }
 
-.btn:focus, .btn:hover{
+.btn:focus, .btn:hover, .link:active{
    background-color: var(--accent-color);
 }
 
@@ -155,7 +156,7 @@ body {
     color: var(--second-text-color);
 }
 
-.bout-iteam{
+.about-iteam{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -168,12 +169,29 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color:var(--primery-text-color);
+    color: var(--primery-text-color);
 }
 
 .about-iteam-skills{
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+.portfolio-name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primery-text-color);
+}
+
+.portfolio-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
@@ -181,9 +199,18 @@ body {
 /* -------address-------- */
 
 .address{
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-title-color);
-    font-synthesis:none;
+}
+
+.italics-none{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primary-title-color);
 }
